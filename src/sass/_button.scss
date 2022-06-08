@@ -1,0 +1,33 @@
+.button__box {
+  display: flex;
+}
+.button {
+  margin-top: 20px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.button__primary {
+  margin-right: 8px;
+  border-radius: 12px;
+  width: 62px;
+  height: 24px;
+  background-color: #d41443;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+}
+.button__secondary {
+  border-radius: 12px;
+  width: 82px;
+  height: 24px;
+  background-color: #ffffff;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: #d41443;
+}
