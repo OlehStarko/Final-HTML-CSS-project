@@ -1,0 +1,2 @@
+!function(){var e={openMenuBtn:document.querySelector(".tel-menu-open"),closeMenuBtn:document.querySelector(".tel-menu-close"),menu:document.querySelector(".tel-menu"),body:document.querySelector("body")};function n(){e.menu.classList.toggle("is-hidden"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)}();
+//# sourceMappingURL=index.03fdd53c.js.map
