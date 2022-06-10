@@ -1,7 +1,7 @@
 @import url(/Users/joker/Desktop/GoIT_course_material/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -66,12 +66,7 @@ ul {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.menu__button {
-  height: 12px;
-}
-/*# sourceMappingURL=index.css.map */
