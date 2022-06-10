@@ -1,7 +1,7 @@
-@import url(c:\GoIt\final-HTML-CSS-project\node_modules\modern-normalize\modern-normalize.css);
+@import url(/Users/olegstarko/Desktop/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -66,7 +66,8 @@ ul {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*# sourceMappingURL=index.css.map */
