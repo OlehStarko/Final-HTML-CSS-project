@@ -1,0 +1,77 @@
+.footer {
+  background-color: #fff5f6;
+  height: 280px;
+  width: 1280px;
+}
+.tagline {
+  padding-top: 60px;
+  margin-left: auto;
+}
+.tagline__text {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+.tagline__text-secondary {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $primary-color;
+}
+.social__link {
+  padding-right: 24px;
+  &:last-child {
+    padding-right: 0;
+  }
+}
+.social__icon {
+  fill: #ffa5ba;
+
+  &:hover , &:focus {
+    fill: $primary-color;
+  }
+}
+.contact__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.02em;
+
+  color: $text-black-color;
+}
+.contact__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.02em;
+  
+  color: $primary-color;
+}
+.footer__copiriht {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  
+  color: $text-grey-color;
+  border-top: 1px solid #e1e1e1;
+}

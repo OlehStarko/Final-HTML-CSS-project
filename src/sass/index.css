@@ -1,0 +1,153 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.menu__button {
+  height: 12px;
+}
+
+.footer {
+  background-color: #fff5f6;
+  height: 280px;
+  width: 1280px;
+}
+
+.tagline {
+  padding-top: 60px;
+  margin-left: auto;
+}
+
+.tagline__text {
+  font-family: "Titan One";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.tagline__text-secondary {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.social__link {
+  padding-right: 24px;
+}
+.social__link:last-child {
+  padding-right: 0;
+}
+
+.social__icon {
+  fill: #ffa5ba;
+}
+.social__icon:hover, .social__icon:focus {
+  fill: #d41443;
+}
+
+.contact__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.contact__link {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.02em;
+  color: #d41443;
+}
+
+.footer__copiriht {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: #907e82;
+  border-top: 1px solid #e1e1e1;
+}/*# sourceMappingURL=index.css.map */
