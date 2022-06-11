@@ -10,7 +10,7 @@
   background: rgba(46, 6, 5, 0.3);
   transition: opacity 250ms;
 }
-.backdrop .is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms;
@@ -90,17 +90,17 @@
 
 .form__user-text {
   display: block;
-  margin-bottom: 4px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 .form__input {
   position: relative;
-  width: 100%;
+  width: 434px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  border-radius: 22px;
   outline: none;
   cursor: pointer;
 
@@ -115,8 +115,8 @@
 
 .form__item {
   display: block;
-  margin-bottom: 4px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 16px;
 }
 
 .form__textarea {
@@ -126,7 +126,7 @@
   resize: none;
   margin-bottom: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  border-radius: 22px;
   outline: none;
   cursor: pointer;
 }
@@ -223,7 +223,7 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: $text-black-color;
+  color: $button-secondary-color;
 
   @media screen and (max-width: 1199px) {
     font-weight: 400;
@@ -238,7 +238,9 @@
     margin: auto;
   }
 }
-
+.accept {
+  color: $primary-color;
+}
 .form__text {
   position: absolute;
   display: block;

@@ -85,7 +85,7 @@ ul {
   transition: opacity 250ms;
 }
 
-.backdrop .is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   transition: opacity 250ms;
@@ -158,17 +158,17 @@ ul {
 
 .form__user-text {
   display: block;
-  margin-bottom: 4px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 .form__input {
   position: relative;
-  width: 100%;
+  width: 434px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  border-radius: 22px;
   outline: none;
   cursor: pointer;
 }
@@ -182,8 +182,8 @@ ul {
 
 .form__item {
   display: block;
-  margin-bottom: 4px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 16px;
 }
 
 .form__textarea {
@@ -193,7 +193,7 @@ ul {
   resize: none;
   margin-bottom: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+  border-radius: 22px;
   outline: none;
   cursor: pointer;
 }
@@ -282,7 +282,7 @@ ul {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #ffffff;
 }
 @media screen and (max-width: 1199px) {
   .form__agreement {
@@ -298,6 +298,10 @@ ul {
     font-size: 14px;
     margin: auto;
   }
+}
+
+.accept {
+  color: #d41443;
 }
 
 .form__text {
