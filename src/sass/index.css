@@ -111,15 +111,9 @@ ul {
   pointer-events: auto;
   overflow-y: auto;
 }
-@media screen and (max-width: 767px) {
-  .modal {
-    width: 100%;
-    overflow: hidden;
-  }
-}
 @media screen and (min-width: 768px) {
   .modal {
-    max-width: 498px;
+    width: 498px;
   }
 }
 
