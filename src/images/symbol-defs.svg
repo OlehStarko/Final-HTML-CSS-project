@@ -1,5 +1,5 @@
-<<<<<<< Updated upstream <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;"
-    version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
         <symbol id="icon-slider-icon" viewBox="0 0 43 32">
             <path fill="#e1e1e1" style="fill: var(--color1, #e1e1e1)"
@@ -115,5 +115,4 @@
                 d="M256 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
         </symbol>
     </defs>
-    </svg>
-    
+</svg>
