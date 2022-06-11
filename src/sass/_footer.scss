@@ -3,7 +3,7 @@
   padding-top: 60px;
 }
 .footer-wrap {
-  display: flex;
+  
   align-items: baseline;
 }
 .wrap {
@@ -16,6 +16,8 @@
   width: 50%;
 }
 .tagline__text {
+  margin-bottom: 16px;
+
   font-family: 'Titan One';
   font-weight: 400;
   font-size: 30px;
@@ -25,6 +27,7 @@
   color: #ffa5ba;
 }
 .tagline__text-secondary {
+  margin-bottom: 60px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -33,13 +36,18 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: $primary-color;
+  color: $primary-color; 
+}
+.social {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
 }
 .social-contact {
   display: block;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+  width: 50%; 
 }
 .social__link {
   margin-right: 24px;
@@ -54,7 +62,9 @@
     fill: $primary-color;
   }
 }
-.contact__text {
+.contact{
+  display: flex;
+  justify-content: flex-end;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;

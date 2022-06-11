@@ -78,7 +78,6 @@ ul {
 }
 
 .footer-wrap {
-  display: flex;
   align-items: baseline;
 }
 
@@ -94,6 +93,7 @@ ul {
 }
 
 .tagline__text {
+  margin-bottom: 16px;
   font-family: "Titan One";
   font-weight: 400;
   font-size: 30px;
@@ -104,6 +104,7 @@ ul {
 }
 
 .tagline__text-secondary {
+  margin-bottom: 60px;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -112,6 +113,12 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
 }
 
 .social-contact {
@@ -135,7 +142,9 @@ ul {
   fill: #d41443;
 }
 
-.contact__text {
+.contact {
+  display: flex;
+  justify-content: flex-end;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
