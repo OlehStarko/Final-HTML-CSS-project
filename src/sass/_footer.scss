@@ -3,13 +3,18 @@
   padding-top: 60px;
 }
 .footer-wrap {
-  
   align-items: baseline;
+ 
 }
 .wrap {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .tagline {
   display: block;
@@ -25,6 +30,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 18px;
+  }
 }
 .tagline__text-secondary {
   margin-bottom: 60px;
@@ -37,6 +46,10 @@
   text-transform: uppercase;
 
   color: $primary-color; 
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 34px;
+  }
 }
 .social {
   display: flex;
@@ -48,6 +61,12 @@
   align-items: center;
   justify-content: flex-end;
   width: 50%; 
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-bottom: 56px;
+    display: block;
+    align-items: center;
+  }
 }
 .social__link {
   margin-right: 24px;
@@ -69,10 +88,15 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.86;
   letter-spacing: 0.02em;
 
   color: $text-black-color;
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+  }
 }
 .contact__link {
   font-family: 'DM Sans';
@@ -81,8 +105,14 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.02em;
+  padding-left: 5px;
   
   color: $primary-color;
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 12px;
+    text-align: right;
+  }
 }
 .footer__copyright {
   display: flex;
