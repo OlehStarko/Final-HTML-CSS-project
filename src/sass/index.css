@@ -1,4 +1,4 @@
-@import url(/Users/olegstarko/Desktop/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
+@import url(c:\Users\Welcome\Documents\GitHub\final-HTML-CSS-project\node_modules\modern-normalize\modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -69,5 +69,83 @@ ul {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.slider__img {
+  display: block;
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__box {
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1034px;
+  background: #FAFAFA;
+  padding: 40px 110px 40px 110px;
+  text-align: center;
+}
+
+.slider__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slider__dots {
+  margin-top: 16px;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin-right: 18px;
+}
+
+.slick-dots li.slick-active button {
+  background-color: transparent;
+  border-radius: 0;
+  background-image: url(/src/images/symbol-defs.svg#icon-house);
+  width: 12px;
+  height: 12px;
+}
+
+.slick-dots li button {
+  cursor: pointer;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  border: none;
+}
+
+.slick-dots li:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=index.css.map */
