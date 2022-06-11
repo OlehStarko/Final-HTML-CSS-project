@@ -74,13 +74,23 @@ ul {
 
 .footer {
   background-color: #fff5f6;
-  height: 280px;
-  width: 1280px;
+  padding-top: 60px;
+}
+
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .tagline {
-  padding-top: 60px;
-  margin-left: auto;
+  display: block;
+  width: 50%;
 }
 
 .tagline__text {
@@ -104,11 +114,18 @@ ul {
   color: #d41443;
 }
 
+.social-contact {
+  display: block;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+
 .social__link {
-  padding-right: 24px;
+  margin-right: 24px;
 }
 .social__link:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .social__icon {
@@ -142,8 +159,8 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 8px auto;
   font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 2.14;
