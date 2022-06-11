@@ -106,14 +106,7 @@
                 stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.172 3.2l14.169 12.8-14.169 12.8">
             </path>
         </symbol>
-        <symbol id="icon-slider-dots" viewBox="0 0 256 32">
-            <path fill="#c7133e" style="fill: var(--color1, #c7133e)"
-                d="M144 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-            <path fill="#c7133e" style="fill: var(--color1, #c7133e)"
-                d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-            <path fill="#c7133e" style="fill: var(--color1, #c7133e)"
-                d="M256 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-        </symbol>
+    
     </defs>
     </svg>
     
