@@ -322,7 +322,7 @@ ul {
   }
 }
 
-.dots-cream {
+.dots {
   margin: 32px auto;
 }
 
@@ -360,8 +360,6 @@ ul {
 }
 
 .button-icon {
-  width: 40px;
-  height: 40px;
   fill: #d41443;
 }
 
