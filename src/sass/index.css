@@ -424,7 +424,7 @@ ul {
   }
 }
 
-.container {
+.container--gallery {
   width: 320px;
   margin: 0 auto;
   padding-left: 20px;
@@ -443,13 +443,13 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container--gallery {
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .container--gallery {
     width: 1280px;
   }
 }
