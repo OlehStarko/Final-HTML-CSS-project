@@ -1,4 +1,4 @@
-@import url(c:\GoIt\final-HTML-CSS-project\node_modules\modern-normalize\modern-normalize.css);
+@import url(/Users/joker/Desktop/GoIT_course_material/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -97,7 +97,7 @@ ul {
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
-  color: red;
+  color: #ffa5ba;
 }
 
 .section-products__title {
@@ -112,6 +112,10 @@ ul {
   color: #d41443;
 }
 
+.products-list {
+  max-width: 1280px;
+}
+
 @media screen and (min-width: 768px) {
   .products-list {
     display: -webkit-box;
@@ -124,6 +128,8 @@ ul {
 @media screen and (min-width: 1280px) {
   .products-list {
     margin: -16px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -282,6 +288,7 @@ ul {
   width: 100%;
   height: 280px;
   background-image: url(../images/mobile/milkshakes-mobile-1x.png);
+  background-size: 280px 280px;
   background-repeat: no-repeat;
   background-position: center;
 }
