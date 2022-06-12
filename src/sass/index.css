@@ -161,7 +161,7 @@ ul {
   position: relative;
   width: 100%;
   height: 44px;
-  padding-left: 42px;
+  padding-left: 16px;
   border: none;
   border-radius: 22px;
   outline: none;
@@ -293,18 +293,19 @@ input::placeholder, textarea::placeholder {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+@media screen and (max-width: 500px) {
+  .form__agreement {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 1199px) {
   .form__agreement {
-    font-weight: 400;
-    font-size: 14px;
     left: 79px;
     margin: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .form__agreement {
-    font-weight: 400;
-    font-size: 14px;
     margin: auto;
   }
 }
