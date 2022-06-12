@@ -17,6 +17,7 @@
   margin: 20px auto;
   @media screen and (min-width: 768px) {
     max-width: 395px;
+    margin-bottom: 40px;
     + .contact-card {
       margin-left: 32px;
     }
@@ -25,7 +26,7 @@
     max-width: 395px;
     margin: 0;
     padding: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 }
 
@@ -176,12 +177,16 @@
   line-height: 21px;
   color: #ffffff;
   border: 0;
-  width: 197px;
   height: 44px;
   margin-bottom: 10px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 0 33px;
+}
+
+.contact-button__svg {
+margin-left: 14px;
 }
 
 .contact-button__margin {
@@ -204,13 +209,10 @@
 .contact-button__background-color {
   background-color: $button-secondary-color;
   color: $primary-color;
+  padding: 0 40px;
 }
 .contact-button__background-color:hover {
   background-color: #ecebeb;
-}
-
-.contact-button__svg {
-  margin-left: 15px;
 }
 
 //modal test
@@ -244,6 +246,7 @@
     transform: translate(-50%, -50%);
     padding: 2em;
     background: white;
+    border-radius: 30px;
   }
   h1 {
     font-size: 150%;
@@ -252,18 +255,9 @@
 }
 
 .modal-close {
-  color: #aaa;
-  line-height: 50px;
-  font-size: 80%;
   position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 70px;
-  text-decoration: none;
-  &:hover {
-    color: black;
-  }
+  right: 20px;
+  top: 20px;
 }
 
 .contact-modal {
@@ -287,7 +281,6 @@
 }
 
 .contact-map iframe {
-  // overflow: hidden;
   left: 0;
   top: 0;
   height: 70%;
@@ -297,9 +290,4 @@
     height: 100%;
     width: 100%;
   }
-}
-
-.contact-close {
-  margin-top: 30px;
-  margin-right: 15px;
 }
