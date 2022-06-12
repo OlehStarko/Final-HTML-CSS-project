@@ -81,7 +81,7 @@ ul {
   .section-products {
     padding-top: 40px;
     padding-bottom: 60px;
-
+  }}
 .galerry {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(60%, #fff));
   background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 60%);
@@ -154,11 +154,11 @@ ul {
     width: calc((100% - 3 * 16px) / 3);
     margin: 128px 8px 8px 8px;
 
+  }
+}
   .galerry {
     min-height: 430px;
   }
-}
-
 .container {
   width: 320px;
   margin: 0 auto;
@@ -549,12 +549,12 @@ ul {
   .products-list__title--milk::before {
     background-image: url(../images/tablet/milkshakes-tablet-2x.png);
 
-  .tr-three {
+  }
+}
+.tr-three {
     -webkit-transform: translateY(12px);
             transform: translateY(12px);
   }
-}
-
 .gallery__slide {
   position: fixed;
   position: absolute;
@@ -670,12 +670,12 @@ ul {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-
-.slick-dots {
-=======
-  .gallery__bd-box {
+.gallery__bd-box {
     width: 70%;
   }
+.slick-dots {
+
+  
 }
 
 .gallery__window {
@@ -918,18 +918,18 @@ ul {
 
 .slick-dots li.slick-active button {
   background-color: #d41443;
-=======
+
   margin-top: 10px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
 }
 
 @media screen and (min-width: 550px) {
-  .gallery__mobile-btn {
+  
+}
+.gallery__mobile-btn {
     display: none;
   }
-}
-
 .gallery__mb-btn {
   padding: 0;
   margin: 0;
