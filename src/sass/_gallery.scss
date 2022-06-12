@@ -123,7 +123,7 @@
     margin-top: 5px;
   }
 }
-@include bc(six, rgb(210, 105, 30));
+// @include bc(six, rgb(210, 105, 30));
 
 .seven {
   margin-top: 2px;
@@ -131,7 +131,7 @@
     margin-top: 5px;
   }
 }
-@include bc(eight, rgb(0, 0, 0));
+// @include bc(eight, rgb(0, 0, 0));
 
 .nine {
   margin-top: 2px;
@@ -139,7 +139,7 @@
     margin-top: 5px;
   }
 }
-@include bc(ten, rgb(127, 255, 0));
+// @include bc(ten, rgb(127, 255, 0));
 
 .tr-one {
   transform: translateY(5px);
