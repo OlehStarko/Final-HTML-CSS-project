@@ -77,24 +77,43 @@
     }
   }
   &__content {
+    position: relative;
     margin-bottom: 40px;
+    z-index: 999;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 80px;
       display: flex;
     }
     @media screen and (min-width: 1280px) {
-      margin-bottom: 21px;
-      background-image: url(/src/images/desktop/milk-desktop-1x.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(/src/images/desktop/milk-desktop-2x.png);
+      &::before {
+        content: '';
+        background: url(../images/desktop/milk-desktop-1x.png);
+        width: 1280;
+        height: 100%;
+        position: absolute;
+        left: -16px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(/src/images/desktop/milk-desktop-2x.png);
+        }
       }
     }
+    // @media screen and (min-width: 1280px) {
+    //   margin-bottom: 21px;
+    //   background-image: url(/src/images/desktop/milk-desktop-1x.png);
+    //   background-repeat: no-repeat;
+    //   background-position: center;
+    //   background-size: contain;
+    //   @media (min-device-pixel-ratio: 2),
+    //     (min-resolution: 192dpi),
+    //     (min-resolution: 2dppx) {
+    //     background-image: url(/src/images/desktop/milk-desktop-2x.png);
+    //   }
+    // }
   }
   &__picture {
     margin-bottom: 40px;
@@ -357,16 +376,6 @@
       margin-left: 128px;
     }
   }
-
-  //   &__img {
-  //     margin-bottom: 16px;
-  //     @media screen and (min-width: 768px) {
-  //       margin-bottom: 36px;
-  //     }
-  //     @media screen and (min-width: 1280px) {
-  //       margin-bottom: 40px;
-  //     }
-  //   }
   &__title {
     font-family: 'Titan One';
     font-size: 36px;

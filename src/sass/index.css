@@ -161,7 +161,9 @@ ul {
   }
 }
 .about__content {
+  position: relative;
   margin-bottom: 40px;
+  z-index: 999;
 }
 @media screen and (min-width: 768px) {
   .about__content {
@@ -170,16 +172,19 @@ ul {
   }
 }
 @media screen and (min-width: 1280px) {
-  .about__content {
-    margin-bottom: 21px;
-    background-image: url(/src/images/desktop/milk-desktop-1x.png);
+  .about__content::before {
+    content: "";
+    background: url(../images/desktop/milk-desktop-1x.png);
+    width: 1280;
+    height: 100%;
+    position: absolute;
+    left: -16px;
+    z-index: -1;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .about__content {
+  .about__content::before {
     background-image: url(/src/images/desktop/milk-desktop-2x.png);
   }
 }
