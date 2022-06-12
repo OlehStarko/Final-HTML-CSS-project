@@ -76,6 +76,7 @@ ul {
   background-color: #fff5f6;
   background-image: url(/src/images/mobile/milk-mobile-1x.png);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: 0 574px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -89,6 +90,7 @@ ul {
     margin: 0 auto;
     background-image: url(/src/images/mobile/milk-mobile-1x.png);
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: center 535px;
   }
 }
@@ -172,6 +174,7 @@ ul {
     margin-bottom: 21px;
     background-image: url(/src/images/desktop/milk-desktop-1x.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
   }
 }
@@ -348,6 +351,111 @@ ul {
     margin-left: -128px;
   }
 }
+.about-advantages-list__item.first::before {
+  content: "";
+  background: url(../images/mobile/made-icon-mobile-1-1x.png);
+  width: 33px;
+  height: 50px;
+  display: block;
+  margin-bottom: 16px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about-advantages-list__item.first::before {
+    background: url(../images/mobile/made-icon-mobile-1-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-advantages-list__item.first::before {
+    background: url(../images/tablet/made-icon-tablet-1-1x.png);
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about-advantages-list__item.first::before {
+    background: url(../images/tablet/made-icon-tablet-1-2x.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-advantages-list__item.first::before {
+    background: url(../images/desktop/made-icon-desktop-1-1x.png);
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about-advantages-list__item.first::before {
+    background: url(../images/desktop/made-icon-desktop-1-2x.png);
+  }
+}
+.about-advantages-list__item.second::before {
+  content: "";
+  background: url(../images/mobile/made-icon-mobile-2-1x.png);
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-bottom: 16px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about-advantages-list__item.second::before {
+    background: url(../images/mobile/made-icon-mobile-2-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-advantages-list__item.second::before {
+    background: url(../images/tablet/made-icon-tablet-2-1x.png);
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about-advantages-list__item.second::before {
+    background: url(../images/tablet/made-icon-tablet-2-2x.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-advantages-list__item.second::before {
+    background: url(../images/desktop/made-icon-desktop-2-1x.png);
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about-advantages-list__item.second::before {
+    background: url(../images/desktop/made-icon-desktop-2-2x.png);
+  }
+}
+.about-advantages-list__item.third::before {
+  content: "";
+  background: url(../images/mobile/made-icon-mobile-3-1x.png);
+  width: 44px;
+  height: 50px;
+  display: block;
+  margin-bottom: 16px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about-advantages-list__item.third::before {
+    background: url(../images/mobile/made-icon-mobile-3-2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-advantages-list__item.third::before {
+    background: url(../images/tablet/made-icon-tablet-3-1x.png);
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about-advantages-list__item.third::before {
+    background: url(../images/tablet/made-icon-tablet-3-2x.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about-advantages-list__item.third::before {
+    background: url(../images/desktop/made-icon-desktop-3-1x.png);
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about-advantages-list__item.third::before {
+    background: url(../images/desktop/made-icon-desktop-3-2x.png);
+  }
+}
 .about-advantages-list__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -373,19 +481,6 @@ ul {
     max-width: 1280px;
     width: calc(33.3333333333% - 128px);
     margin-left: 128px;
-  }
-}
-.about-advantages-list__img {
-  margin-bottom: 16px;
-}
-@media screen and (min-width: 768px) {
-  .about-advantages-list__img {
-    margin-bottom: 36px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .about-advantages-list__img {
-    margin-bottom: 40px;
   }
 }
 .about-advantages-list__title {

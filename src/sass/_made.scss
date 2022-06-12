@@ -6,6 +6,7 @@
   background-color: #fff5f6;
   background-image: url(/src/images/mobile/milk-mobile-1x.png);
   background-repeat: no-repeat;
+  background-size: contain;
   background-position: 0 574px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -17,6 +18,7 @@
     margin: 0 auto;
     background-image: url(/src/images/mobile/milk-mobile-1x.png);
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: center 535px;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -85,6 +87,7 @@
       margin-bottom: 21px;
       background-image: url(/src/images/desktop/milk-desktop-1x.png);
       background-repeat: no-repeat;
+      background-position: center;
       background-size: contain;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -235,6 +238,105 @@
     margin-left: -128px;
   }
   &__item {
+    &.first {
+      &::before {
+        content: '';
+        background: url(../images/mobile/made-icon-mobile-1-1x.png);
+        width: 33px;
+        height: 50px;
+        display: block;
+        margin-bottom: 16px;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/mobile/made-icon-mobile-1-2x.png);
+        }
+        @media screen and (min-width: 768px) {
+          background: url(../images/tablet/made-icon-tablet-1-1x.png);
+          margin-bottom: 36px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/tablet/made-icon-tablet-1-2x.png);
+          }
+        }
+        @media screen and (min-width: 1280px) {
+          background: url(../images/desktop/made-icon-desktop-1-1x.png);
+          margin-bottom: 40px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/desktop/made-icon-desktop-1-2x.png);
+          }
+        }
+      }
+    }
+    &.second {
+      &::before {
+        content: '';
+        background: url(../images/mobile/made-icon-mobile-2-1x.png);
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 16px;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/mobile/made-icon-mobile-2-2x.png);
+        }
+        @media screen and (min-width: 768px) {
+          background: url(../images/tablet/made-icon-tablet-2-1x.png);
+          margin-bottom: 36px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/tablet/made-icon-tablet-2-2x.png);
+          }
+        }
+        @media screen and (min-width: 1280px) {
+          background: url(../images/desktop/made-icon-desktop-2-1x.png);
+          margin-bottom: 40px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/desktop/made-icon-desktop-2-2x.png);
+          }
+        }
+      }
+    }
+    &.third {
+      &::before {
+        content: '';
+        background: url(../images/mobile/made-icon-mobile-3-1x.png);
+        width: 44px;
+        height: 50px;
+        display: block;
+        margin-bottom: 16px;
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background: url(../images/mobile/made-icon-mobile-3-2x.png);
+        }
+        @media screen and (min-width: 768px) {
+          background: url(../images/tablet/made-icon-tablet-3-1x.png);
+          margin-bottom: 36px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/tablet/made-icon-tablet-3-2x.png);
+          }
+        }
+        @media screen and (min-width: 1280px) {
+          background: url(../images/desktop/made-icon-desktop-3-1x.png);
+          margin-bottom: 40px;
+          @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background: url(../images/desktop/made-icon-desktop-3-2x.png);
+          }
+        }
+      }
+    }
     &:not(:last-child) {
       margin-bottom: 32px;
       @media screen and (min-width: 768px) {
@@ -256,15 +358,15 @@
     }
   }
 
-  &__img {
-    margin-bottom: 16px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 36px;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 40px;
-    }
-  }
+  //   &__img {
+  //     margin-bottom: 16px;
+  //     @media screen and (min-width: 768px) {
+  //       margin-bottom: 36px;
+  //     }
+  //     @media screen and (min-width: 1280px) {
+  //       margin-bottom: 40px;
+  //     }
+  //   }
   &__title {
     font-family: 'Titan One';
     font-size: 36px;
@@ -274,6 +376,7 @@
     color: $primary-color;
     width: 98px;
     height: 56px;
+
     @media screen and (min-width: 768px) {
       width: 100%;
       font-family: 'Titan One';
