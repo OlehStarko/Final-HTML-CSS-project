@@ -101,7 +101,6 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
-  overflow-y: scroll;
   background-color: #ffb8ca;
   background-image: url(../images/desktop/milk-desktop-1x.png);
   border-radius: 24px;
@@ -225,6 +224,7 @@ input::placeholder, textarea::placeholder {
   margin-right: 8px;
   width: 16px;
   height: 15px;
+  border-radius: 3px;
   border: 2px solid #d41443;
 }
 

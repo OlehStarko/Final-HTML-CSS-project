@@ -28,7 +28,6 @@
 
   transform: translate(-50%, -50%);
   z-index: 1000;
-  overflow-y: scroll;
 
   background-color: $ice-cream-pl-bg-color;
   background-image: url(../images/desktop/milk-desktop-1x.png);
@@ -144,6 +143,7 @@ input::placeholder, textarea::placeholder {
   margin-right: 8px;
   width: 16px;
   height: 15px;
+  border-radius: 3px;
   border: 2px solid $primary-color;
 }
 
