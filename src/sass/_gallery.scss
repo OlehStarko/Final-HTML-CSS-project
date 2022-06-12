@@ -95,18 +95,16 @@
   transition: opacity 500ms ease;
 }
 
-@include bc(one, rgb(0, 255, 255));
-@include bc(two, rgb(0, 0, 255));
+// @include bc(one, rgb(0, 255, 255));
+// @include bc(two, rgb(0, 0, 255));
 
 .three {
-  background-color: green;
   margin-top: 2px;
   @media screen and (min-width: 1280px) {
     margin-top: 5px;
   }
 }
 .four {
-  background-color: red;
   width: 78px;
   height: 78px;
   margin-top: 0;
@@ -120,7 +118,6 @@
   }
 }
 .five {
-  background-color: orange;
   margin-top: 2px;
   @media screen and (min-width: 1280px) {
     margin-top: 5px;
@@ -129,7 +126,6 @@
 @include bc(six, rgb(210, 105, 30));
 
 .seven {
-  background-color: tomato;
   margin-top: 2px;
   @media screen and (min-width: 1280px) {
     margin-top: 5px;
@@ -138,7 +134,6 @@
 @include bc(eight, rgb(0, 0, 0));
 
 .nine {
-  background-color: blueviolet;
   margin-top: 2px;
   @media screen and (min-width: 1280px) {
     margin-top: 5px;
