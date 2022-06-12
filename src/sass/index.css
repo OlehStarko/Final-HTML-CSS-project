@@ -360,6 +360,8 @@ ul {
 }
 
 .button-icon {
+  width: 40px;
+  height: 40px;
   fill: #d41443;
 }
 
