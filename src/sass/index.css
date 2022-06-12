@@ -1,4 +1,4 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+@import '../../node_modules/modern-normalize/modern-normalize.css';
 html {
   box-sizing: border-box;
 }
@@ -66,10 +66,6 @@ ul {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.menu__button {
-  height: 12px;
 }
 
 .footer {
