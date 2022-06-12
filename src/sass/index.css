@@ -351,9 +351,6 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -362,8 +359,21 @@ ul {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: #ffffff;
   border: none;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products-list__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: #d41443;
+}
+
+.products-list__button:hover .button-icon {
+  fill: #ffffff;
 }
 
 .button-icon {

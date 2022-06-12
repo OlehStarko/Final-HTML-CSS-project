@@ -262,15 +262,23 @@
 
 .products-list__button {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: $secondary-color;
   border: none;
+  transition: 250ms $timing-function;
+  &:hover {
+    transform: scale(1.1);
+    background-color: $primary-color;
+    .button-icon {
+      fill: $secondary-color;
+    }
+  }
 }
 
 .button-icon {
