@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 80px;
+  background-color: #fff5f6;
   background-image: url(/src/images/mobile/milk-mobile-1x.png);
   background-repeat: no-repeat;
   background-position: 0 574px;
@@ -84,6 +85,7 @@
       margin-bottom: 21px;
       background-image: url(/src/images/desktop/milk-desktop-1x.png);
       background-repeat: no-repeat;
+      background-size: contain;
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {

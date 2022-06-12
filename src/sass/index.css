@@ -73,6 +73,7 @@ ul {
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 80px;
+  background-color: #fff5f6;
   background-image: url(/src/images/mobile/milk-mobile-1x.png);
   background-repeat: no-repeat;
   background-position: 0 574px;
@@ -171,6 +172,7 @@ ul {
     margin-bottom: 21px;
     background-image: url(/src/images/desktop/milk-desktop-1x.png);
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
