@@ -60,6 +60,7 @@
 
 .modal__text {
   margin-top: 50px;
+  margin-bottom: 24px;
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
@@ -158,6 +159,7 @@ input::placeholder, textarea::placeholder {
   justify-content: center;
   align-items: center;
   margin-top: 24px;
+  margin-bottom: 50px;
 }
 
 .form__button {
@@ -206,7 +208,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .form__svg-check {
-  fill: transparent;
+  fill: none;
 }
 
 .form__agreement {
