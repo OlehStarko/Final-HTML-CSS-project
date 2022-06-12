@@ -15,6 +15,21 @@
     height: 85px;
     margin-left: auto;
     margin-right: auto;
+
+    background-image: url(../images/mobile/slider-photo-1-mobile-1x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/mobile/slider-photo-1-mobile-2x.png);
+      }
+    }
 }
 
 .slider__box {
@@ -30,6 +45,7 @@
 }
 
 .slider__text {
+    position: relative;
     margin: 0;
     padding: 0;
 
@@ -37,21 +53,22 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 2.55;
-}
 
-.slider__box::before {
-    content: "";
-    position: absolute;
-
-    left: 0;
-    top: 30px;
-
-    width: 54px;
-    height: 40px;
-    background-image: url(../images/icon-slider-icon.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    &::before {
+            content: "";
+            position: absolute;
+    
+            left: 50%;
+    
+            transform: translateX(-50%);
+    
+            width: 32px;
+            height: 4px;
+            background-image: url(../images/icon-slider-icon.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 }
 
 .slider__name {
@@ -61,21 +78,22 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.86;
-}
 
-.slider__text::after {
-    content: "";
-    position: absolute;
-
-    left: 50%;
-    top: 0;
-
-    width: 32px;
-    height: 4px;
-    background-image: url(../images/icon-slider-dots.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    &::before {
+            content: "";
+            position: absolute;
+    
+            left: 50%;
+    
+            transform: translateX(-50%);
+    
+            width: 32px;
+            height: 4px;
+            background-image: url(../images/icon-slider-dots.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 }
 
 // .slider__dots {
@@ -103,6 +121,7 @@
 
 .slick-track {
     display: flex;
+    overflow: hidden;
 }
 
 .slick-dots {
@@ -112,6 +131,9 @@
     padding: 0;
 }
 
+.slick-list {
+    overflow: hidden;
+}
 .slick-dots li {
     list-style: none;
     margin-right: 18px;
