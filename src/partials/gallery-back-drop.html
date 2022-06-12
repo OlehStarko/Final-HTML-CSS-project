@@ -1,7 +1,17 @@
-<section class="galerry">
-  <div class="container container--gallery">
-    <div class="gallery__box gallery__one">
-      <div class="gallery__img-box one">
+<div class="gallery__slide galerry__is-hidden">
+  <button type="button" class="gallery__close">
+    <svg class="gallery__btn-close">
+      <use href="./images/symbol-defs.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="gallery__bd-box">
+    <button type="button" class="gallery__back gallery__bd-toggle">
+      <svg class="gallery__btn-toggle">
+        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <ul class="gallery__window">
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -21,11 +31,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-    </div>
-    <div class="gallery__box gallery__two">
-      <div class="gallery__img-box two">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -45,9 +52,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see"><span>See</span></p>
-      </div>
-      <div class="gallery__img-box three">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -67,11 +73,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-    </div>
-    <div class="gallery__box gallery__three">
-      <div class="gallery__img-box four">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -91,9 +94,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-      <div class="gallery__img-box five">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -113,11 +115,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-    </div>
-    <div class="gallery__box tr-one gallery__four">
-      <div class="gallery__img-box six">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -137,9 +136,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-      <div class="gallery__img-box seven">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -159,11 +157,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-    </div>
-    <div class="gallery__box tr-two gallery__five">
-      <div class="gallery__img-box eight">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -183,9 +178,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-      <div class="gallery__img-box nine">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -205,11 +199,8 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
-    </div>
-    <div class="gallery__box tr-three gallery__six">
-      <div class="gallery__img-box ten">
+      </li>
+      <li class="gallery__bd-img">
         <picture class="gallery__img">
           <source
             srcset="
@@ -229,8 +220,24 @@
             sizes="(min-width: 320px) 100vw"
           />
         </picture>
-        <p class="galerry__see">See</p>
-      </div>
+      </li>
+    </ul>
+    <button type="button" class="gallery__next gallery__bd-toggle">
+      <svg class="gallery__btn-toggle">
+        <use href="./images/symbol-defs.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <div class="gallery__mobile-btn">
+      <button type="button" class="gallery__mb-back gallery__mb-btn">
+        <svg class="gallery__btn-toggle">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <button type="button" class="gallery__mb-next gallery__mb-btn">
+        <svg class="gallery__btn-toggle">
+          <use href="./images/symbol-defs.svg#icon-arrow"></use>
+        </svg>
+      </button>
     </div>
   </div>
-</section>
+</div>
