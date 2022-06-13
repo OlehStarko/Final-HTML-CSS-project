@@ -212,6 +212,7 @@
 
 .slider__text {
     position: relative;
+    z-index: 1;
     padding: 0 8px 9px 15px;
     margin: auto;
     max-width: calc(100% - 40px);
@@ -239,8 +240,9 @@
     &::before {
         content: "";
         position: absolute;
-        top: -15px;
-        left: -25px;
+        z-index: -1;
+        top: -10px;
+        left: 0;
     
         width: 54px;
         height: 40px;
@@ -248,16 +250,6 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        
-        @media screen and (min-width: 768px) and (max-width: 1279px) {
-            top: -15px;
-            left: -25px;
-        }
-        
-        @media screen and (min-width: 1280px) {
-            top: -15px;
-            left: -35px;
-        }
     }
 }
 

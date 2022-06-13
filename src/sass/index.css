@@ -1660,6 +1660,7 @@ ul {
 
 .slider__text {
   position: relative;
+  z-index: 1;
   padding: 0 8px 9px 15px;
   margin: auto;
   max-width: calc(100% - 40px);
@@ -1690,28 +1691,15 @@ ul {
 .slider__text::before {
   content: "";
   position: absolute;
-  top: -15px;
-  left: -25px;
+  z-index: -1;
+  top: -10px;
+  left: 0;
   width: 54px;
   height: 40px;
   background-image: url(../images/slider-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .slider__text::before {
-    top: -15px;
-    left: -25px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .slider__text::before {
-    top: -15px;
-    left: -35px;
-  }
 }
 
 .slider__name {
