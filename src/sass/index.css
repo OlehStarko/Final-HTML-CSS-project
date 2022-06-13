@@ -72,6 +72,437 @@ ul {
   overflow: hidden;
 }
 
+.hero {
+  height: 502px;
+  padding-top: 194px;
+  padding-bottom: 158px;
+  background-image: url(../images/mobile/hero-img-mobile-1x.png);
+  background-repeat: no-repeat;
+  background-position: right -60px bottom;
+  background-color: #ffb8ca;
+  background-size: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 416px;
+    padding-top: 102px;
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    height: 664px;
+    padding-top: 147px;
+    padding-bottom: 84px;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile/hero-img-mobile-2x.png);
+    background-size: 346px 419px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/tablet/hero-girl-tablet-1x.png), url(../images/tablet/hero-img-tablet-1x.png), url(../images/tablet/hero-milk-tablet-1x.png);
+    background-size: contain;
+    background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
+    background-size: 190px 150px, 335px 373px, 152px 154px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet/hero-girl-tablet-2x.png), url(../images/tablet/hero-img-tablet-2x.png), url(../images/tablet/hero-milk-tablet-2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    background-image: url(../images/desktop/hero-girl-desktop-1x.png), url(../images/desktop/hero-img-desktop-1x.png), url(../images/desktop/hero-milk-desktop-1x.png);
+    background-size: auto, auto, auto;
+    background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
+    background-size: 304px 241px, 534px 611px, 213px 216px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop/hero-girl-desktop-2x.png), url(../images/desktop/hero-img-desktop-2x.png), url(../images/desktop/hero-milk-desktop-2x.png);
+  }
+}
+
+.hero__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.hero__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__text {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero__text--cafe {
+  width: 43px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__text--cafe {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__text--cafe {
+    width: 72px;
+  }
+}
+
+.hero__text--food {
+  width: 51px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__text--food {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__text--food {
+    width: 92px;
+  }
+}
+
+.hero__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero__title {
+  font-family: 'Titan One';
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 218px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.13;
+    max-width: 162px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.15;
+    max-width: 277px;
+  }
+}
+
+.hero__title--passion {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 0.96;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title--passion {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 0.91;
+    max-width: 162px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title--passion {
+    font-size: 58px;
+    line-height: 0.89;
+  }
+}
+
+.hero__title--element {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #d41443;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__title--element {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title--element {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.hero__title--element::before {
+  content: '';
+  display: block;
+  background-color: #ffff;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title--element::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hero__btn--products {
+  height: 24px;
+  width: 61.2px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+  background-color: #d41443;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid transparent;
+  font-family: inherit;
+  margin-right: 8px;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.hero__btn--products:hover, .hero__btn--products:focus {
+  background-color: #c7133e;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__btn--products {
+    margin-right: 9.2px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__btn--products {
+    height: 40px;
+    width: 107px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 12px;
+  }
+}
+
+.hero__btn--made {
+  height: 24px;
+  width: 82.8px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #c7133e;
+  background-color: #ffffff;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid transparent;
+  font-family: inherit;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__btn--made {
+    height: 40px;
+    width: 138px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.hero__btn--made:hover, .hero__btn--made:focus {
+  background-color: #ecebeb;
+}
+
+.hero__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 145px;
+  margin-top: 61px;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__about {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__about {
+    margin-left: 213px;
+    margin-top: 108px;
+  }
+}
+
+.hero__about--item {
+  max-width: 114px;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__about--item {
+    max-width: 200px;
+  }
+}
+
+.hero__about--text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 7px;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__about--text {
+    font-size: 14px;
+    line-height: 1.42;
+    margin-bottom: 20px;
+  }
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #c7133e;
+}
+
+@media screen and (min-width: 1280px) {
+  .btn {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.btn__icon {
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  fill: #c7133e;
+}
+
+.btn__icon:hover, .btn__icon:focus {
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 1280px) {
+  .btn__icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 .section-products {
   padding-top: 80px;
   padding-bottom: 40px;
