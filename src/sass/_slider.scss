@@ -317,11 +317,11 @@
 .slick-list {
   overflow: hidden;
 }
-.slick-dots li {
+.slider .slick-dots li {
   margin-right: 18px;
 }
 
-.slick-dots li.slick-active button {
+.slider .slick-dots li.slick-active button {
   width: 12px;
   height: 12px;
 
@@ -334,7 +334,7 @@
   border-radius: 0;
 }
 
-.slick-dots li button {
+.slider .slick-dots li button {
   width: 12px;
   height: 12px;
 
