@@ -74,30 +74,6 @@ ul {
   padding-top: 40px;
   padding-bottom: 80px;
   background-color: #fff5f6;
-  background-image: url(/src/images/mobile/milk-mobile-1x.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 574px;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .about {
-    background-image: url(/src/images/mobile/milk-mobile-2x.png);
-  }
-}
-@media screen and (min-width: 480px) {
-  .about {
-    width: 480px;
-    margin: 0 auto;
-    background-image: url(/src/images/mobile/milk-mobile-1x.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center 535px;
-  }
-}
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .about {
-    background-image: url(/src/images/mobile/milk-mobile-2x.png);
-  }
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -161,24 +137,52 @@ ul {
   }
 }
 .about__content {
+  width: 280px;
   position: relative;
   margin-bottom: 40px;
   z-index: 999;
 }
+.about__content::before {
+  content: "";
+  background: url(../images/mobile/milk-mobile-1x.png);
+  width: 320px;
+  height: 133px;
+  position: absolute;
+  left: -20px;
+  top: 390px;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__content::before {
+    background: url(/src/images/mobile/milk-mobile-2x.png);
+    background-size: contain;
+  }
+}
 @media screen and (min-width: 768px) {
   .about__content {
+    width: 768px;
     margin-bottom: 80px;
     display: flex;
   }
+  .about__content::before {
+    display: none;
+  }
 }
 @media screen and (min-width: 1280px) {
+  .about__content {
+    width: 1280px;
+    margin-bottom: 20px;
+  }
   .about__content::before {
+    display: inline;
     content: "";
     background: url(../images/desktop/milk-desktop-1x.png);
     width: 1280;
     height: 100%;
     position: absolute;
-    left: -16px;
+    left: -15px;
+    top: 0;
     z-index: -1;
     background-repeat: no-repeat;
   }
@@ -186,6 +190,7 @@ ul {
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about__content::before {
     background-image: url(/src/images/desktop/milk-desktop-2x.png);
+    background-size: contain;
   }
 }
 .about__picture {
@@ -194,16 +199,12 @@ ul {
 @media screen and (min-width: 768px) {
   .about__picture {
     margin-right: 32px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .about__picture {
     margin-right: 140px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .about__img {
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -219,11 +220,6 @@ ul {
   color: #000000;
   margin-bottom: 20px;
   width: 220px;
-}
-@media screen and (min-width: 480px) {
-  .about__second-title {
-    margin: 0 auto 20px;
-  }
 }
 @media screen and (min-width: 768px) {
   .about__second-title {
@@ -250,11 +246,6 @@ ul {
   width: 220px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 480px) {
-  .about__second-text {
-    margin: 0 auto 20px;
-  }
-}
 @media screen and (min-width: 768px) {
   .about__second-text {
     width: 334px;
@@ -278,11 +269,6 @@ ul {
   color: #907e82;
   width: 220px;
   margin-bottom: 20px;
-}
-@media screen and (min-width: 480px) {
-  .about__bottom-text {
-    margin: 0 auto 20px;
-  }
 }
 @media screen and (min-width: 768px) {
   .about__bottom-text {
@@ -326,11 +312,6 @@ ul {
 .about__btn:hover, .about__btn:focus {
   background-color: #ecebeb;
 }
-@media screen and (min-width: 480px) {
-  .about__btn {
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .about__btn {
     font-size: 16px;
@@ -367,6 +348,7 @@ ul {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about-advantages-list__item.first::before {
     background: url(../images/mobile/made-icon-mobile-1-2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 768px) {
@@ -378,6 +360,7 @@ ul {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .about-advantages-list__item.first::before {
     background: url(../images/tablet/made-icon-tablet-1-2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -389,6 +372,7 @@ ul {
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about-advantages-list__item.first::before {
     background: url(../images/desktop/made-icon-desktop-1-2x.png);
+    background-size: contain;
   }
 }
 .about-advantages-list__item.second::before {
@@ -402,6 +386,7 @@ ul {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about-advantages-list__item.second::before {
     background: url(../images/mobile/made-icon-mobile-2-2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 768px) {
@@ -413,6 +398,7 @@ ul {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .about-advantages-list__item.second::before {
     background: url(../images/tablet/made-icon-tablet-2-2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -424,6 +410,7 @@ ul {
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about-advantages-list__item.second::before {
     background: url(../images/desktop/made-icon-desktop-2-2x.png);
+    background-size: contain;
   }
 }
 .about-advantages-list__item.third::before {
@@ -437,6 +424,7 @@ ul {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about-advantages-list__item.third::before {
     background: url(../images/mobile/made-icon-mobile-3-2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 768px) {
@@ -448,6 +436,7 @@ ul {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .about-advantages-list__item.third::before {
     background: url(../images/tablet/made-icon-tablet-3-2x.png);
+    background-size: contain;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -459,6 +448,7 @@ ul {
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about-advantages-list__item.third::before {
     background: url(../images/desktop/made-icon-desktop-3-2x.png);
+    background-size: contain;
   }
 }
 .about-advantages-list__item:not(:last-child) {
@@ -467,12 +457,6 @@ ul {
 @media screen and (min-width: 768px) {
   .about-advantages-list__item:not(:last-child) {
     margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 480px) {
-  .about-advantages-list__item {
-    width: 220px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
