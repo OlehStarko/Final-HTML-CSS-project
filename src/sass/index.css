@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(c:\Users\Welcome\Documents\GitHub\final-HTML-CSS-project\node_modules\modern-normalize\modern-normalize.css);
+@import url(/Users/joker/Desktop/GoIT_course_material/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -110,7 +110,7 @@ ul {
   .hero {
     background-image: url(../images/tablet/hero-girl-tablet-1x.png), url(../images/tablet/hero-img-tablet-1x.png), url(../images/tablet/hero-milk-tablet-1x.png);
     background-size: contain;
-    background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
+    background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
     background-size: 190px 150px, 335px 373px, 152px 154px;
   }
 }
@@ -125,7 +125,7 @@ ul {
   .hero {
     background-image: url(../images/desktop/hero-girl-desktop-1x.png), url(../images/desktop/hero-img-desktop-1x.png), url(../images/desktop/hero-milk-desktop-1x.png);
     background-size: auto, auto, auto;
-    background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
+    background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
     background-size: 304px 241px, 534px 611px, 213px 216px;
   }
 }
@@ -1633,7 +1633,8 @@ ul {
 .slider__box {
   padding: 30px 50px 17px;
   margin: 32px auto 36px auto;
-  background-color: #FAFAFA;
+  border-radius: 24px;
+  background-color: #fafafa;
 }
 
 @media screen and (max-width: 767px) {
@@ -1664,7 +1665,7 @@ ul {
   padding: 0 8px 9px 15px;
   margin: auto;
   max-width: calc(100% - 40px);
-  background: repeating-linear-gradient(#FAFAFA 0 30px, #E1E1E1 0 31px);
+  background: repeating-linear-gradient(#fafafa 0 30px, #e1e1e1 0 31px);
   color: #000000;
   font-weight: 500;
   font-size: 12px;
@@ -1689,7 +1690,7 @@ ul {
 }
 
 .slider__text::before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   top: -10px;
@@ -1725,7 +1726,7 @@ ul {
 }
 
 .slider__name::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -16px;
   left: 50%;
@@ -1800,7 +1801,7 @@ ul {
 .slick-dots li button {
   width: 12px;
   height: 12px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   border-radius: 50%;
   font-size: 0;
   border: none;
