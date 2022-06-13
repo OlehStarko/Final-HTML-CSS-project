@@ -307,7 +307,7 @@
   }
 }
 
-.btn--arrow {
+.btn-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +329,7 @@
     height: 26px;
   }
 
-  &__icon {
+  &--icon {
     transition: $timing-function 250ms;
     fill: $button-primary-color;
     &:hover,
