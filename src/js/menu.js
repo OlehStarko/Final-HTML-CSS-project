@@ -20,7 +20,7 @@
   refs.closeMenuBtn5.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
+    refs.menu.classList.toggle('is-hidden-menu');
     refs.body.classList.toggle('no-scroll');
   }
 })();
