@@ -196,7 +196,7 @@ ul {
 }
 
 /* Tell menu */
-.tel-menu.is-hidden {
+.tel-menu.is-hidden-menu {
   pointer-events: painted;
   visibility: visible;
   -webkit-transform: translate(0px, 0px);
@@ -207,6 +207,7 @@ ul {
 
 .tel-menu {
   position: fixed;
+  z-index: 999;
   top: 0;
   right: 0;
   width: 100%;
