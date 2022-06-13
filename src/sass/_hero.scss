@@ -18,7 +18,7 @@
 
    background-image: url(../images/mobile/hero-img-mobile-1x.png);
    background-repeat: no-repeat;
-   background-position: center bottom;
+   background-position: left 36px bottom;
    background-color: $bg-color;
    background-size: auto;
    
@@ -32,7 +32,7 @@
       @media screen and (min-width: 768px){
       background-image:url(../images/tablet/hero-girl-tablet-1x.png), url(../images/tablet/hero-img-tablet-1x.png), url(../images/tablet/hero-milk-tablet-1x.png);
       background-size: contain;
-      background-position: bottom right 65px, bottom center, bottom 16px left 32px;
+      background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -45,7 +45,7 @@
       @media screen and (min-width: 1280px){
       background-image:url(../images/desktop/hero-girl-desktop-1x.png), url(../images/desktop/hero-img-desktop-1x.png), url(../images/desktop/hero-milk-desktop-1x.png);
       background-size: auto, auto, auto;
-      background-position: bottom right 16px, bottom right 225px, bottom 16px left 16px;
+      background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -330,6 +330,7 @@
 
   &__icon{
    transition:$timing-function 250ms ;
+   fill: $button-primary-color;
    &:hover,
    &:focus {
         fill: $button-secondary-color;
