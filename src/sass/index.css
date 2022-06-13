@@ -1611,7 +1611,7 @@ ul {
   fill: #d41443;
 }
 
-.contact {
+.contact--footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1628,7 +1628,7 @@ ul {
 }
 
 @media screen and (max-width: 767px) {
-  .contact {
+  .contact--footer {
     display: block;
     font-size: 12px;
     text-align: right;
