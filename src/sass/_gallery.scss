@@ -4,7 +4,13 @@
   }
 }
 .galerry {
-  background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 60%);
+  background-image: linear-gradient(
+    to bottom,
+    #fff5f6 0%,
+    #fff5f6 40%,
+    #fff 40%,
+    #fff 100%
+  );
   min-height: 122px;
   @media screen and (min-width: 768px) {
     min-height: 264px;
