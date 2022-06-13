@@ -169,7 +169,7 @@ ul {
   color: #d41443;
 }
 
-/* tell menu */
+/* Tell menu */
 .tel-menu.is-hidden {
   pointer-events: painted;
   visibility: visible;
@@ -265,36 +265,6 @@ ul {
 .tel-menu__link:hover,
 .tel-menu__link:focus {
   color: #d41443;
-}
-
-.div1 {
-  width: 300px;
-  height: 700px;
-  background-color: blue;
-}
-
-.div2 {
-  width: 300px;
-  height: 700px;
-  background-color: black;
-}
-
-.div3 {
-  width: 300px;
-  height: 700px;
-  background-color: aquamarine;
-}
-
-.div4 {
-  width: 300px;
-  height: 700px;
-  background-color: red;
-}
-
-.div5 {
-  width: 300px;
-  height: 700px;
-  background-color: blue;
 }
 
 .galerry {
