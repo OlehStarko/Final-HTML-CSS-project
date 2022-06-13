@@ -73,7 +73,6 @@ ul {
 }
 
 .header {
-  background-color: #ffb8ca;
   position: absolute;
   top: 0;
   left: 0;
@@ -2021,11 +2020,11 @@ ul {
   overflow: hidden;
 }
 
-.slick-dots li {
+.slider .slick-dots li {
   margin-right: 18px;
 }
 
-.slick-dots li.slick-active button {
+.slider .slick-dots li.slick-active button {
   width: 12px;
   height: 12px;
   background-image: url(../images/house.svg);
@@ -2036,7 +2035,7 @@ ul {
   border-radius: 0;
 }
 
-.slick-dots li button {
+.slider .slick-dots li button {
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
