@@ -1,4 +1,4 @@
-@import url(/Users/joker/Desktop/GoIT_course_material/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
+@import url(c:\GoIt\final-HTML-CSS-project\node_modules\modern-normalize\modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -100,6 +100,21 @@ ul {
   color: #ffa5ba;
 }
 
+@media screen and (min-width: 768px) {
+  .section-products__label {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-products__label {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
 .section-products__title {
   margin-bottom: 8px;
   font-family: 'Titan One';
@@ -110,6 +125,20 @@ ul {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+@media screen and (min-width: 768px) {
+  .section-products__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-products__title {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
 }
 
 .products-list {
