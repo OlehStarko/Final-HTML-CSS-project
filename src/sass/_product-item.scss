@@ -14,7 +14,8 @@
 }
 
 .products-list__item {
-  width: 280px;
+  min-width: 280px;
+  width: calc(100% - 200px);
   border-radius: 24px;
   margin-top: 148px;
   margin-left: auto;
