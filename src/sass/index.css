@@ -2595,7 +2595,6 @@ ul {
 }
 
 .contact {
-  margin-top: 120px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #ffffff), color-stop(0%, #fff5f6));
   background: linear-gradient(to bottom, #ffffff 15%, #fff5f6 0%);
 }
@@ -2608,7 +2607,15 @@ ul {
   padding: 40px 32px;
   max-width: 280px;
   min-height: 332px;
-  margin: 20px auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-card:last-child {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -2635,15 +2642,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   .contact-div .contact-card:first-child {
     margin-left: 18px;
-  }
-  .contact-div .contact-card:last-child {
-    margin-right: 18px;
   }
 }
 
@@ -2901,7 +2902,6 @@ ul {
   color: #ffffff;
   border: 0;
   height: 44px;
-  margin-bottom: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2910,6 +2910,12 @@ ul {
           justify-content: center;
   cursor: pointer;
   padding: 0 33px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-button {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-button__svg {
