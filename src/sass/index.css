@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(/Users/joker/Desktop/GoIT_course_material/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
+@import url(c:\Users\Welcome\Documents\GitHub\final-HTML-CSS-project\node_modules\modern-normalize\modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -350,7 +350,7 @@ ul {
   .hero {
     background-image: url(../images/tablet/hero-girl-tablet-1x.png), url(../images/tablet/hero-img-tablet-1x.png), url(../images/tablet/hero-milk-tablet-1x.png);
     background-size: contain;
-    background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
+    background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
     background-size: 190px 150px, 335px 373px, 152px 154px;
   }
 }
@@ -365,7 +365,7 @@ ul {
   .hero {
     background-image: url(../images/desktop/hero-girl-desktop-1x.png), url(../images/desktop/hero-img-desktop-1x.png), url(../images/desktop/hero-milk-desktop-1x.png);
     background-size: auto, auto, auto;
-    background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
+    background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
     background-size: 304px 241px, 534px 611px, 213px 216px;
   }
 }
