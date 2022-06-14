@@ -2840,19 +2840,23 @@ ul {
   border-color: 1px solid #c7133e;
 }
 
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: rgba(199, 19, 62, 0.3);
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   color: rgba(199, 19, 62, 0.3);
 }
 
-input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
   color: rgba(199, 19, 62, 0.3);
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: rgba(199, 19, 62, 0.3);
 }
 
