@@ -1440,6 +1440,12 @@ ul {
   top: 18px;
 }
 
+.about-advantages-list {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 768px) {
   .about-advantages-list {
     display: -webkit-box;
@@ -1447,12 +1453,13 @@ ul {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-left: -22px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about-advantages-list {
+    width: 100%;
     margin-left: -128px;
   }
 }

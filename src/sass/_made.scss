@@ -237,12 +237,16 @@
 }
 
 .about-advantages-list {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -22px;
+    width: 768px;
   }
   @media screen and (min-width: 1280px) {
+    width: 100%;
     margin-left: -128px;
   }
   &__item {
