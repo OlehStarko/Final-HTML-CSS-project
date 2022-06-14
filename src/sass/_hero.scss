@@ -1,8 +1,10 @@
 .hero {
+   position: relative;
    height: 502px;
    padding-top: 194px;
    padding-bottom: 158px;
-   
+   background-color: $bg-color;
+   z-index: 5;
 
    @media screen and (min-width: 768px){
       height: 416px;
@@ -16,22 +18,31 @@
       padding-bottom: 84px;
    }
 
-   background-image: url(../images/mobile/hero-img-mobile-1x.png);
-   background-repeat: no-repeat;
-   background-position: left 36px bottom;
-   background-color: $bg-color;
-   background-size: auto;
-   
-      @media (min-device-pixel-ratio: 2),
+   &::before {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;  
+    position: absolute;  
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/mobile/hero-img-mobile-1x.png);
+    background-repeat: no-repeat;
+    background-size: 346px 419px;
+    background-position: right -36px bottom;
+    z-index: -1;
+    
+    @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
          background-image: url(../images/mobile/hero-img-mobile-2x.png);
          background-size: 346px 419px;
         }
-   
+    
       @media screen and (min-width: 768px){
       background-image:url(../images/tablet/hero-girl-tablet-1x.png), url(../images/tablet/hero-img-tablet-1x.png), url(../images/tablet/hero-milk-tablet-1x.png);
-      background-size: contain;
       background-position: bottom right 32px, bottom right 185px, bottom 16px left 32px;
 
       @media (min-device-pixel-ratio: 2),
@@ -42,9 +53,8 @@
         background-size: 190px 150px, 335px 373px, 152px 154px;   
    }
 
-      @media screen and (min-width: 1280px){
-      background-image:url(../images/desktop/hero-girl-desktop-1x.png), url(../images/desktop/hero-img-desktop-1x.png), url(../images/desktop/hero-milk-desktop-1x.png);
-      background-size: auto, auto, auto;
+   @media screen and (min-width: 1280px){
+      background-image:url(../images/desktop/hero-girl-desktop-1x.png), url(../images/desktop/hero-img-desktop-1x.png), url(../images/desktop/hero-milk-desktop-1x.png); 
       background-position: bottom right 16px, bottom right 229px, bottom 60px left 16px;
 
       @media (min-device-pixel-ratio: 2),
@@ -53,6 +63,8 @@
          background-image: url(../images/desktop/hero-girl-desktop-2x.png), url(../images/desktop/hero-img-desktop-2x.png), url(../images/desktop/hero-milk-desktop-2x.png);
         }
         background-size: 304px 241px, 534px 611px, 213px 216px;   
+   }
+
    }
 
 
@@ -191,26 +203,27 @@
 
  }
  }
+&__button{
+   font-weight: 400;
+   line-height: 1.25;
+   cursor: pointer;
+   align-items: center;
+   border-top-left-radius: 50px;
+   border-bottom-left-radius: 50px;
+   border-top-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+   border: 2px solid transparent;
+   font-family: inherit;
+   transition:$timing-function 250ms ;
+}
 
-
-&__btn--products {
+&__button--products {
     height: 24px;
     width: 61.2px;
-    font-weight: 400;
     font-size: 8px;
-    line-height: 1.25;
     color: $secondary-color;
     background-color: $primary-color;
-    cursor: pointer;
-    align-items: center;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 2px solid transparent;
-    font-family: inherit;
     margin-right: 8px;
-    transition:$timing-function 250ms ;
 
     &:hover,
     &:focus {
@@ -233,23 +246,12 @@
 
  }
 
-&__btn--made {
+&__button--made {
     height: 24px;
     width: 82.8px;
-    font-weight: 400;
     font-size: 8px;
-    line-height: 1.25;
     color: $button-primary-color;
     background-color: $button-secondary-color;
-    cursor: pointer;
-    align-items: center;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border: 2px solid transparent;
-    font-family: inherit;
-    transition:$timing-function 250ms ;
 
     @media screen and (min-width: 1280px){
     height: 40px;
@@ -306,7 +308,7 @@
    }
 }
 
-.btn {
+.btn-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
