@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(/Users/joker/Desktop/GoIT_course_material/parcel-project-template/node_modules/modern-normalize/modern-normalize.css);
+@import url(/Users/olegstarko/Desktop/final-HTML-CSS-project/node_modules/modern-normalize/modern-normalize.css);
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -237,6 +237,8 @@ ul {
   cursor: pointer;
   top: 20px;
   right: 20px;
+  stroke: #ffffff;
+  stroke-width: 3px;
 }
 
 .tel-menu__button {
