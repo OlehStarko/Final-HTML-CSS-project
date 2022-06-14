@@ -45,8 +45,10 @@
 
 .modal__button {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  width: 32px;
+  height: 32px;
+  top: 16px;
+  right: 16px;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -54,6 +56,20 @@
   &:focus {
     fill: $button-primary-color;
   }
+  &:hover .modal__cross {
+    stroke: $primary-color;
+    transform: scale(1.2);
+    rotate: 90deg;
+    stroke-width: 10px;
+  }
+}
+
+.modal__cross {
+  stroke: $secondary-color;
+  stroke-width: 3px;
+  transform: scale(1);
+  transition: 250ms $timing-function;
+  rotate: 0;
 }
 
 .modal__text {
@@ -98,9 +114,14 @@
   border-radius: 22px;
   outline: none;
   cursor: pointer;
+  border: 1px solid transparent;
   margin-bottom: 16px;
+  &:hover {
+    cursor: text;
+    border: 1px solid $button-primary-color;
+  }
   &:focus {
-    border-color: 1px solid $button-primary-color;
+    border: 1px solid $button-primary-color;
   }
 }
 .form__comment {
@@ -123,9 +144,13 @@
   border: none;
   border-radius: 22px;
   outline: none;
-  cursor: pointer;
+  cursor: text;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid $button-primary-color;
+  }
   &:focus {
-    border-color: 1px solid $button-primary-color;
+    border: 1px solid $button-primary-color;
   }
 }
 input::placeholder,

@@ -234,6 +234,9 @@
   justify-content: center;
   cursor: pointer;
   padding: 0 33px;
+  &:hover {
+    background-color: #c7133e;
+  }
   @media screen and (max-width: 768px) {
     margin-bottom: 10px;
   }

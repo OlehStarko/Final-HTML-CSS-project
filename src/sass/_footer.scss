@@ -71,14 +71,14 @@
   &:last-child {
     margin-right: 0;
   }
+  &:hover .social__icon {
+    background-color: $primary-color;
+  }
 }
 .social__icon {
-  fill: #ffa5ba;
-
-  &:hover,
-  &:focus {
-    fill: $primary-color;
-  }
+  fill: $secondary-color;
+  background-color: #fea5bb;
+  border-radius: 50%;
 }
 .contact--footer {
   display: flex;
