@@ -128,7 +128,8 @@
     border-color: 1px solid $button-primary-color;
   }
 }
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: rgba(199, 19, 62, 0.3);
 }
 .form__wrap {
@@ -176,7 +177,6 @@ input::placeholder, textarea::placeholder {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .form__button-text {
@@ -195,7 +195,6 @@ input::placeholder, textarea::placeholder {
   line-height: 1.28;
 
   color: $secondary-color;
-
 }
 
 .form__svg {
@@ -244,7 +243,7 @@ input::placeholder, textarea::placeholder {
   padding-left: 42px;
   width: 100%;
   height: 40px;
-  border: 1px solid rgba(33, 33, 33, .2);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -260,10 +259,10 @@ input::placeholder, textarea::placeholder {
   clip: rect(0 0 0 0);
 }
 
-.form__checkbox:checked+.form__agreement .form__icon-check {
+.form__checkbox:checked + .form__agreement .form__icon-check {
   border-color: $primary-color;
 }
 
-.form__checkbox:checked+.form__agreement .form__svg-check {
+.form__checkbox:checked + .form__agreement .form__svg-check {
   fill: $modal-color;
 }
