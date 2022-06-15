@@ -86,7 +86,7 @@
 }
 
 .gallery__img {
-  transition: 250ms $timing-function;
+  transition: transform 250ms $timing-function;
 }
 .galerry__see {
   padding: 0;
