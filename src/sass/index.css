@@ -3195,6 +3195,12 @@ ul {
   pointer-events: auto;
 }
 
+.card-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: auto;
+}
+
 .modal-close,
 .modal-close1,
 .modal-close2 {
