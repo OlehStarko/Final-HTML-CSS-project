@@ -15,6 +15,29 @@ const mbNext = document.querySelector('.gallery__mb-next');
 const children = [...one, ...two, ...three, ...four, ...five, ...six];
 const img = document.querySelector('.gallery__window').children;
 
+const productbtn = document.querySelector('.hero__button--products');
+const howbtn = document.querySelector('.hero__button--made');
+
+productbtn.addEventListener('click', function () {
+  const height = document.querySelector('.hero').offsetHeight;
+  window.scrollTo({
+    top: height,
+    left: 0,
+    behavior: 'smooth',
+  });
+});
+
+howbtn.addEventListener('click', function () {
+  const height =
+    document.querySelector('.hero').offsetHeight +
+    document.querySelector('.section-products').offsetHeight;
+  window.scrollTo({
+    top: height,
+    left: 0,
+    behavior: 'smooth',
+  });
+});
+
 for (let i = 0; i < children.length; i += 1) {
   children[i].addEventListener('click', function () {
     document.body.style.top = `-${window.scrollY}px`;
