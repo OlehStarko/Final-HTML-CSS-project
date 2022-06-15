@@ -6,6 +6,11 @@
   );
 }
 
+.contact-block {
+  display: block;
+  z-index: 9999;
+}
+
 .contact-card {
   background: $button-secondary-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -16,10 +21,12 @@
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
   @media screen and (max-width: 767px) {
     &:last-child {
       margin-bottom: 32px;
     }
+    
   }
   @media screen and (min-width: 768px) {
     max-width: 395px;
@@ -101,6 +108,7 @@
   }
   
   .contact-card__anim2 {
+    margin-left: 32px;
     transform: translateY(0);
     animation-delay: 0.3s;
     animation-name: card-up;
@@ -263,10 +271,10 @@
 
 .contact-tel,
 .contact-mail {
+  z-index: 888888;
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
-  max-width: 162px;
   color: $text-grey-color;
   @media screen and (min-width: 768px) {
     font-size: 14px;
