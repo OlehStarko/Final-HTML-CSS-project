@@ -25,7 +25,6 @@
 
 const openBackdropTel = document.querySelector('.backdrop-tel');
 const openModalTel = document.querySelector('.tel-modal--open');
-console.log(openModalTel);
 openModalTel.addEventListener('click', function () {
   openBackdropTel.classList.toggle('is-hidden');
 });

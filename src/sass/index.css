@@ -2629,6 +2629,11 @@ ul {
   background: linear-gradient(to bottom, #ffffff 15%, #fff5f6 0%);
 }
 
+.contact-block {
+  display: block;
+  z-index: 9999;
+}
+
 .contact-card {
   background: #ffffff;
   -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -2640,6 +2645,7 @@ ul {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
@@ -2674,7 +2680,7 @@ ul {
     display: flex;
   }
   .contact-div .contact-card:first-child {
-    margin-left: 18px;
+    margin-left: 0;
   }
 }
 
@@ -2704,6 +2710,74 @@ ul {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     opacity: 0;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact-card__anim1:hover {
+    -webkit-animation-delay: 0.1ms;
+            animation-delay: 0.1ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: up;
+            animation-name: up;
+    -webkit-animation-duration: 250ms;
+            animation-duration: 250ms;
+    opacity: 1;
+  }
+  @-webkit-keyframes up {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+  }
+  @keyframes up {
+    from {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    to {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+  }
+  .contact-card__anim1:not(:hover) {
+    -webkit-animation-delay: 0.1ms;
+            animation-delay: 0.1ms;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: down2;
+            animation-name: down2;
+    -webkit-animation-duration: 250ms;
+            animation-duration: 250ms;
+    opacity: 1;
+  }
+  @-webkit-keyframes down2 {
+    from {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes down2 {
+    from {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+    }
+    to {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
   }
   .contact-card__anim2 {
     -webkit-transform: translateY(0);
@@ -2720,6 +2794,30 @@ ul {
             animation-fill-mode: forwards;
     opacity: 0;
   }
+  .contact-card__anim2:hover {
+    -webkit-animation-delay: 0.1ms;
+            animation-delay: 0.1ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: up;
+            animation-name: up;
+    -webkit-animation-duration: 250ms;
+            animation-duration: 250ms;
+    opacity: 1;
+  }
+  .contact-card__anim2:not(:hover) {
+    -webkit-animation-delay: 0.1ms;
+            animation-delay: 0.1ms;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: down2;
+            animation-name: down2;
+    -webkit-animation-duration: 250ms;
+            animation-duration: 250ms;
+    opacity: 1;
+  }
   .contact-card__anim3 {
     display: block;
     -webkit-transform: translateY(0);
@@ -2735,6 +2833,30 @@ ul {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     opacity: 0;
+  }
+  .contact-card__anim3:hover {
+    -webkit-animation-delay: 0.1ms;
+            animation-delay: 0.1ms;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: up;
+            animation-name: up;
+    -webkit-animation-duration: 250ms;
+            animation-duration: 250ms;
+    opacity: 1;
+  }
+  .contact-card__anim3:not(:hover) {
+    -webkit-animation-delay: 0.1ms;
+            animation-delay: 0.1ms;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-name: down2;
+            animation-name: down2;
+    -webkit-animation-duration: 250ms;
+            animation-duration: 250ms;
+    opacity: 1;
   }
   @-webkit-keyframes card-up {
     0% {
@@ -2889,6 +3011,7 @@ ul {
 
 .contact-tel,
 .contact-mail {
+  z-index: 888888;
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
@@ -2932,6 +3055,8 @@ ul {
   color: #ffffff;
   border: 0;
   height: 44px;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2944,6 +3069,8 @@ ul {
 
 .contact-button:hover {
   background-color: #c7133e;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 768px) {
@@ -2991,19 +3118,27 @@ ul {
 .contact-button__background-color {
   background-color: #ffffff;
   color: #d41443;
-  padding: 0 40px;
+  padding: 0 50px;
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .contact-button__background-color:hover {
   background-color: #ecebeb;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window {
+.modal-window,
+.modal-window1,
+.modal-window2 {
   position: fixed;
   background-color: rgba(46, 6, 5, 0.3);
   top: 0;
   right: 0;
   bottom: 0;
+  width: 100%;
+  height: 100%;
   left: 0;
   z-index: 1;
   visibility: hidden;
@@ -3013,13 +3148,9 @@ ul {
   transition: all 0.3s;
 }
 
-.modal-window:target {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-window > div {
+.modal-window > div,
+.modal-window1 > div,
+.modal-window2 > div {
   width: 80%;
   height: 80%;
   position: absolute;
@@ -3033,21 +3164,35 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .modal-window > div {
+  .modal-window > div,
+  .modal-window1 > div,
+  .modal-window2 > div {
     height: 90%;
   }
 }
 
-.modal-window h1 {
+.modal-window h1,
+.modal-window1 h1,
+.modal-window2 h1 {
   font-size: 22px;
   margin: 0 0 15px;
 }
 
-.modal-window p {
+.modal-window p,
+.modal-window1 p,
+.modal-window2 p {
   margin-bottom: 15px;
 }
 
-.modal-close {
+.card-visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-close,
+.modal-close1,
+.modal-close2 {
   position: absolute;
   right: 0;
   top: 0;
