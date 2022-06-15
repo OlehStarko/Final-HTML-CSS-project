@@ -3014,7 +3014,11 @@ ul {
 }
 
 .contact-tel,
-.contact-mail {
+.contact-mail,
+.contact-tel2,
+.contact-tel3,
+.contact-mail2,
+.contact-mail3 {
   z-index: 888888;
   font-weight: 500;
   font-size: 12px;
@@ -3025,19 +3029,51 @@ ul {
 
 @media screen and (min-width: 768px) {
   .contact-tel,
-  .contact-mail {
+  .contact-mail,
+  .contact-tel2,
+  .contact-tel3,
+  .contact-mail2,
+  .contact-mail3 {
     font-size: 14px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contact-tel,
-  .contact-mail {
+  .contact-mail,
+  .contact-tel2,
+  .contact-tel3,
+  .contact-mail2,
+  .contact-mail3 {
     font-size: 16px;
   }
 }
 
 .contact-tel:before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #e1e1e1;
+  left: 0;
+  width: 100%;
+  top: 50px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.contact-tel2:before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: #e1e1e1;
+  left: 0;
+  width: 100%;
+  top: 50px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.contact-tel3:before {
   content: '';
   display: block;
   height: 1px;

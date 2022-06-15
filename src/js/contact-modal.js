@@ -8,6 +8,13 @@ const modalclose2 = document.querySelector('.modal-close2');
 const modalbtn = document.querySelector('.contact-button__margin');
 const contacttel = document.querySelector('.contact-tel');
 const contactmail = document.querySelector('.contact-mail');
+
+const contacttel2 = document.querySelector('.contact-tel2');
+const contactmail2 = document.querySelector('.contact-mail2');
+
+const contacttel3 = document.querySelector('.contact-tel3');
+const contactmail3 = document.querySelector('.contact-mail3');
+
 console.log(children);
 console.log(contactcard1);
 console.log(contactmail);
@@ -77,4 +84,18 @@ contacttel.addEventListener('click', function () {
 });
 contactmail.addEventListener('click', function () {
   contactcard1.classList.toggle('card-hidden');
+});
+
+contacttel2.addEventListener('click', function () {
+  contactcard2.classList.toggle('card-hidden');
+});
+contactmail2.addEventListener('click', function () {
+  contactcard2.classList.toggle('card-hidden');
+});
+
+contacttel3.addEventListener('click', function () {
+  contactcard3.classList.toggle('card-hidden');
+});
+contactmail3.addEventListener('click', function () {
+  contactcard3.classList.toggle('card-hidden');
 });
