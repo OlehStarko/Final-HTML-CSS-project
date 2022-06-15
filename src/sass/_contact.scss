@@ -63,7 +63,43 @@
     animation-timing-function: $timing-function;
     animation-fill-mode: forwards;
     opacity: 0;
+    animation-iteration-count: 1;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      animation-delay: 0.1ms;
+      animation-fill-mode: forwards;
+      animation-name: up;
+      animation-duration: 250ms;
+      opacity: 1;
+      @keyframes up {
+        from {
+          transform: translateY(0);
+        }
+    
+        to {
+          transform: translateY(-20px);
+        }
+      }
+    }
+    &:not(:hover) {
+      animation-delay: 0.1ms;
+      transform: translateY(-20px);
+      animation-fill-mode: forwards;
+      animation-name: down2;
+      animation-duration: 250ms;
+      opacity: 1;
+      @keyframes down2 {
+        from {
+          transform: translateY(-20px);
+        }
+    
+        to {
+          transform: translateY(0);
+        }
+      }
+    }
   }
+  
   .contact-card__anim2 {
     transform: translateY(0);
     animation-delay: 0.3s;
@@ -72,7 +108,23 @@
     animation-timing-function: $timing-function;
     animation-fill-mode: forwards;
     opacity: 0;
+    &:hover {
+      animation-delay: 0.1ms;
+      animation-fill-mode: forwards;
+      animation-name: up;
+      animation-duration: 250ms;
+      opacity: 1;
+    }
+    &:not(:hover) {
+      animation-delay: 0.1ms;
+      transform: translateY(-20px);
+      animation-fill-mode: forwards;
+      animation-name: down2;
+      animation-duration: 250ms;
+      opacity: 1;
+    }
   }
+
   .contact-card__anim3 {
     display: block;
     transform: translateY(0);
@@ -82,7 +134,23 @@
     animation-timing-function: $timing-function;
     animation-fill-mode: forwards;
     opacity: 0;
+    &:hover {
+      animation-delay: 0.1ms;
+      animation-fill-mode: forwards;
+      animation-name: up;
+      animation-duration: 250ms;
+      opacity: 1;
+    }
+    &:not(:hover) {
+      animation-delay: 0.1ms;
+      transform: translateY(-20px);
+      animation-fill-mode: forwards;
+      animation-name: down2;
+      animation-duration: 250ms;
+      opacity: 1;
+    }
   }
+
   @keyframes card-up {
     0% {
       opacity: 0;
@@ -95,6 +163,7 @@
     }
   }
 }
+
 
 //end-animation
 
@@ -197,6 +266,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
+  max-width: 162px;
   color: $text-grey-color;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -229,6 +299,7 @@
   color: #ffffff;
   border: 0;
   height: 44px;
+  transition: $timing-function 250ms;
 
   align-items: center;
   justify-content: center;
@@ -236,6 +307,7 @@
   padding: 0 33px;
   &:hover {
     background-color: #c7133e;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (max-width: 768px) {
     margin-bottom: 10px;
@@ -267,9 +339,12 @@
   background-color: $button-secondary-color;
   color: $primary-color;
   padding: 0 40px;
+  transition: $timing-function 250ms;
 }
 .contact-button__background-color:hover {
   background-color: #ecebeb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 //modal test
