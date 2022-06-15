@@ -5,11 +5,21 @@
     modal: document.querySelector('[data-modal]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtn.addEventListener('click', openModal);
+  refs.closeModalBtn.addEventListener('click', closeModal);
 
-  function toggleModal() {
+  function openModal() {
     refs.modal.classList.toggle('is-hidden');
+    document.body.style.top = `-${window.scrollY}px`;
+    document.body.style.right = 0;
+    document.body.style.left = 0;
+    document.body.style.position = 'fixed';
+  }
+  function closeModal() {
+    refs.modal.classList.toggle('is-hidden');
+    const scrollY = document.body.style.top;
+    document.body.style.position = 'static';
+    window.scrollTo(0, parseInt(scrollY) * -1);
   }
 })();
 
