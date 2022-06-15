@@ -81,6 +81,10 @@ ul {
   z-index: 500;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header .container {
   display: -webkit-box;
   display: -ms-flexbox;
